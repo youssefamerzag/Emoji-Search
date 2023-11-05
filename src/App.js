@@ -21,7 +21,7 @@ function App() {
   return(
     <div>
       <h1 style={{"color" : "wheat"}}>Emoji Search</h1>
-      <input type='text' id='inputsearch' value={emojis} onChange={searchinp}></input>
+      <input type='text' id='inputsearch' value={emojis} onChange={searchinp} placeholder='Search...'></input>
       <ul id='list'>
         {filtreditems.map((emojis , index) =>  <li key={index}>{emojis.emoji} {emojis.description}</li> )}
       </ul>
